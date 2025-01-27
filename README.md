@@ -1,0 +1,2 @@
+# MLmodellinear
+ML model lienar
