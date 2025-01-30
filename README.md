@@ -25,10 +25,11 @@ To run the `boston_housing_linear_regression.py` script, you need the following 
 - numpy
 - pandas
 - scikit-learn
+- openml
 
 You can install these dependencies using pip:
 ```
-pip install numpy pandas scikit-learn
+pip install numpy pandas scikit-learn openml
 ```
 
 ## Running the Script

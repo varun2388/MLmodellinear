@@ -1,12 +1,12 @@
 import numpy as np
 import pandas as pd
-from sklearn.datasets import load_boston
+from sklearn.datasets import fetch_openml
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
 # Load the Boston housing dataset
-boston = load_boston()
+boston = fetch_openml(data_id=531, as_frame=True)
 X = pd.DataFrame(boston.data, columns=boston.feature_names)
 y = pd.Series(boston.target)
 

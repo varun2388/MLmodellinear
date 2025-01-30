@@ -2,13 +2,13 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import joblib
-from sklearn.datasets import load_boston
+from sklearn.datasets import fetch_openml
 
 # Load the trained linear regression model
 model = joblib.load('linear_regression_model.pkl')
 
 # Load the Boston housing dataset
-boston = load_boston()
+boston = fetch_openml(data_id=531, as_frame=True)
 feature_names = boston.feature_names
 
 # Add a title and description to the Streamlit app
