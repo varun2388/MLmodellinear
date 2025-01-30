@@ -36,3 +36,14 @@ To run the `boston_housing_linear_regression.py` script, use the following comma
 ```
 python boston_housing_linear_regression.py
 ```
+
+## Running the Streamlit App
+To run the Streamlit app, you need to install Streamlit:
+```
+pip install streamlit
+```
+
+Then, use the following command to run the Streamlit app:
+```
+streamlit run app.py
+```
